@@ -1,0 +1,31 @@
+.App {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary) 60%, var(--primary-light));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media(max-width: 540px) {
+  .box {
+    flex-direction: column;
+    min-width: 340px;
+    width: 80%;
+  }
+
+  .side {
+    width: 100%;
+    flex-direction: row;
+    height: 40%;
+    max-width: none;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button {
+    height: auto;
+    width: auto;
+  }
+}

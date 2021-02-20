@@ -1,0 +1,121 @@
+.box {
+  height: 80vh;
+  width: 60vw;
+  padding: 8px;
+  background-color: white;
+  box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+  display: flex;
+}
+
+.side main {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.button {
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  height: 20%;
+  width: 100%;
+  max-height: 100px;
+  max-width: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.text {
+  color: white;
+}
+
+.button .text {
+  font-size: 16px;
+}
+
+.button strong {
+  font-size: 16px;
+}
+
+.button #login {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  flex:1;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin: 1rem 0;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  transition: border-color 0.1s ease-in-out;
+  font-size: 20px;
+}
+
+input:focus {
+  border-color: var(--primary);
+}
+
+form button {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+  background: var(--primary-light);
+  cursor: pointer;
+  border: none;
+  width: 30%;
+  height: 2.5rem;
+  transition: all 0.2s ease;
+}
+
+form button:hover {
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+}
+
+form span {
+  cursor: pointer;
+  margin-left: -16px;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
